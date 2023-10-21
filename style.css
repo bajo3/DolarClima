@@ -1,0 +1,141 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.container {
+    background-color: #DDC9B4;
+    padding: 20px;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    border-radius: 15px;
+    box-shadow: 4px 3px 5px 0px #DB0080;
+    -webkit-box-shadow: 4px 3px 5px 0px #DB0080;
+    -moz-box-shadow: 4px 3px 5px 0px #DB0080;
+}
+.logo{
+    margin: auto;
+}
+
+.container > .block {
+    padding: 20px;
+}
+
+
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.block:first-child {
+ background-color: #015c83;
+ color: #DDC9B4;
+}
+
+.information-container {
+    display: flex;
+}
+
+.information {
+    margin-left: 5px;
+}
+
+#location {
+    font-weight: bold;
+    font-size: 22px;  
+}
+#extended-forecast h2{
+    text-align: center;
+}
+.forecast-day{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+}
+.loader {
+  color: #DDC9B4;
+  font-size: 11px;
+  text-indent: -99999em;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  box-shadow: inset 0 0 0 1em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  content: '';
+}
+.loader:before {
+  width: 5.2em;
+  height: 10.2em;
+  background: #2A3D45;
+  border-radius: 10.2em 0 0 10.2em;
+  top: -0.1em;
+  left: -0.1em;
+  -webkit-transform-origin: 5.1em 5.1em;
+  transform-origin: 5.1em 5.1em;
+  -webkit-animation: load2 2s infinite ease 1.5s;
+  animation: load2 2s infinite ease 1.5s;
+}
+.loader:after {
+  width: 5.2em;
+  height: 10.2em;
+  background: #2A3D45;
+  border-radius: 0 10.2em 10.2em 0;
+  top: -0.1em;
+  left: 4.9em;
+  -webkit-transform-origin: 0.1em 5.1em;
+  transform-origin: 0.1em 5.1em;
+  -webkit-animation: load2 2s infinite ease;
+  animation: load2 2s infinite ease;
+}
+@-webkit-keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+footer{
+    color: wheat;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+text-align: center;}
