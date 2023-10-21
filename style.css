@@ -22,6 +22,14 @@ body {
     box-shadow: 4px 3px 5px 0px #DB0080;
     -webkit-box-shadow: 4px 3px 5px 0px #DB0080;
     -moz-box-shadow: 4px 3px 5px 0px #DB0080;
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width:400px){
+    .container{
+        margin-bottom: 20%;
+    }
+
 }
 .logo{
     margin: auto;
@@ -132,6 +140,7 @@ body {
 }
 
 footer{
+    
     color: wheat;
     position: absolute;
     bottom: 0;
