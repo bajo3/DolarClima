@@ -106,5 +106,18 @@ function translateDescription(englishDescription) {
     return weatherDescriptions[englishDescription] || englishDescription;
 }
 
+ // Función para recargar el iframe cada 30 segundos
+ function recargarIframe() {
+    var iframe = document.getElementById("miIframe");
+    iframe.src = iframe.src; // Esto recargará la fuente del iframe
+    console.log('Actualizando dolar')
+  }
+
+  // Configura el intervalo para actualizar el iframe cada 30 segundos
+  setInterval(recargarIframe, 30000); // 30,000 milisegundos = 30 segundos
+
+
 // Llama a la función onLoad al cargar la página
 window.addEventListener("load", onLoad);
+
+
