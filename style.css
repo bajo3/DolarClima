@@ -140,11 +140,16 @@ body {
 }
 
 footer{
-    
+    width: 100%;
     color: wheat;
     position: absolute;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 footer p {
-text-align: center;}
+text-align: center;
+margin: auto;}
